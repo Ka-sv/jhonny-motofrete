@@ -1,0 +1,481 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #007bff; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Garante responsividade */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaço entre logo e texto */
+    width: 100%;
+  }
+  
+  .logo {
+    width: 380px; /* Tamanho da logo */
+    height: auto; /* Mantém proporção */
+  }
+  
+  .header-text {
+    text-align: center;
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+  }
+  
+  .header-text h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header-text p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Responsividade para Header */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Empilha logo e texto em telas menores */
+      align-items: center;
+    }
+  
+    .header-content {
+      flex-direction: column;
+    }
+  
+    .header-text {
+      text-align: center;
+    }
+  }
+  
+  /* Main */
+  main {
+    padding: 2rem;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradiente azul */
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    margin-top: 1rem; /* Espaço entre o header e a seção */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .call-button {
+    background: #ff4500;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .call-button:hover {
+    background: #ff6347;
+  }
+  
+  /* Services */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .service-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Onde Atuamos */
+  .onde-atuamos {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    color: #333;
+  }
+  
+  .onde-atuamos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .onde-atuamos p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .zona {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .zona h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #0056b3;
+  }
+  
+  .zona ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .zona li {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+  }
+  
+  /* Responsividade para Onde Atuamos */
+  @media (max-width: 768px) {
+    .zona {
+      width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .zona {
+      width: 100%;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Icone WhatsApp */
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .whatsapp-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer Estilização */
+  .footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-logo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-link,
+  .contact-link {
+    display: inline-block;
+  }
+  
+  .social-icon {
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .contact-link {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    color: #f1f1f1;
+  }
+  
+  .social-link:hover .social-icon {
+    opacity: 0.7;
+  }
+  
+  /* Responsividade para Footer */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .footer-right {
+      justify-content: center;
+      gap: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-left {
+      font-size: 0.9rem;
+    }
+  
+    .social-icon {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .footer-logo {
+      width: 40px; /* Ajuste o tamanho do logo em telas pequenas */
+    }
+  }
+  
+  /* Estilo geral para o header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilo da logo */
+  .logo {
+    width: 180px;
+    height: auto;
+  }
+  
+  /* Estilo do texto no cabeçalho */
+  .header-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .header-text h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header-text p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Botão moderno para "Sobre a Empresa" */
+  .btn-modern {
+    background: linear-gradient(45deg, #ff7a18, #ff4500);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-modern:hover {
+    background: linear-gradient(45deg, #ff4500, #ff7a18);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsividade e alinhamento */
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* Estilo do botão */
+.btn-modern {
+    background: linear-gradient(45deg, #ff7a18, #ff4500);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-modern:hover {
+    background: linear-gradient(45deg, #ff4500, #ff7a18);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo do modal */
+  .modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .modal-content p,
+  .modal-content ul {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .modal-content ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+  
+  /* Botão de fechar */
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 95%;
+      padding: 1.5rem;
+    }
+  
+    .modal-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .modal-content p,
+    .modal-content ul {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animação */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: row; /* Mantém os itens em linha */
+    }
+  
+    .btn-modern {
+      order: 3; /* Garante que o botão sempre fique à direita */
+    }
+  }
+  

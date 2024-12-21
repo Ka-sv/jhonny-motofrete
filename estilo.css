@@ -519,4 +519,19 @@ header {
       order: 3; /* Garante que o botão sempre fique à direita */
     }
   }
-  
+  /* Estilo para telas menores que 480px (smartphones) */
+@media screen and (max-width: 480px) {
+  body {
+      font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+  }
+
+  header {
+      font-size: 14px; /* Ajusta o tamanho do texto do cabeçalho */
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: column; /* Coloca os itens do menu em coluna */
+      align-items: center;
+  }
+}

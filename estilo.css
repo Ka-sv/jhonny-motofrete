@@ -520,18 +520,93 @@ header {
     }
   }
   /* Estilo para telas menores que 480px (smartphones) */
-@media screen and (max-width: 480px) {
+  @media (max-width: 480px) {
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+  .zona {
+      width: 100%; /* Coluna ocupa toda a largura */
+      margin-bottom: 1rem;
+  }
+
+  .areas {
+      gap: 1rem; /* Reduz o espaço entre as zonas */
+  }
+
+  .onde-atuamos h2 {
+      font-size: 1.5rem;
+  }
+
+  .onde-atuamos p {
+      font-size: 1rem;
+  }
+}
+.btn-modern, .call-button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 480px) {
+  .btn-modern, .call-button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 480px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+  }
+
+  .footer-left, .footer-right {
+      text-align: center;
+  }
+
+  .footer-logo {
+      width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
   body {
-      font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+      padding: 10px;
+      font-size: 0.9rem;
   }
 
-  header {
-      font-size: 14px; /* Ajusta o tamanho do texto do cabeçalho */
+  .hero-section {
+      padding: 1rem 0.5rem;
+      text-align: center;
   }
 
-  .menu {
-      display: flex;
-      flex-direction: column; /* Coloca os itens do menu em coluna */
-      align-items: center;
+  .hero-content h1 {
+      font-size: 1.8rem;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
   }
 }

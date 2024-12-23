@@ -72,7 +72,7 @@
   
   /* Hero Section */
   .hero-section {
-    background: linear-gradient(to right, #007bff, #0056b3); /* Gradiente azul */
+    background: linear-gradient(to right, #000000, #0056b3); /* Gradiente azul */
     color: #fff;
     padding: 2rem 1rem;
     text-align: center;
@@ -221,7 +221,7 @@
   
   /* Footer Estilização */
   .footer {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
@@ -311,7 +311,7 @@
   
   /* Estilo geral para o header */
 header {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
